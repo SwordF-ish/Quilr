@@ -1,0 +1,11 @@
+[project]
+name = "ai-field-developer-practice"
+version = "1.0.0"
+description = "Solutions to the AI Field Developer practice test: MCP server, MCP gateway, streaming PII guardrail, rate-limiting/fallback LLM router."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+addopts = "--import-mode=importlib"
+pythonpath = ["task1_mcp_server", "task2_mcp_gateway", "task3_pii_stream_guardrail", "task4_llm_router"]
